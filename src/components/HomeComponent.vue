@@ -3,9 +3,6 @@
     <v-main :min-height="$vuetify.display.mdAndUp ? 800 : 550">
       <v-container class="h-100 d-flex align-center justify-center">
         <div class="w-100 w-md-50 text-center">
-          <v-chip border="thin opacity-25" color="surface" variant="flat">
-          </v-chip>
-
           <h1 class="text-h4 text-md-h2 font-weight-bold my-6">
             Diego Pablo Aguilar García
           </h1>
