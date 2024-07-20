@@ -15,6 +15,8 @@
 
           <div class="d-flex ga-4 justify-center">
             <v-btn
+              to="/proyects"
+              tag="router-link"
               class="text-none"
               color="primary"
               flat

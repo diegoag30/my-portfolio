@@ -1,16 +1,11 @@
 <template>
-  <HomeComponent />
+  <router-view></router-view>
 </template>
 
 <script>
-//import HelloWorld from "./components/HelloWorld.vue";
-import HomeComponent from "./components/HomeComponent.vue";
-
 export default {
   name: "App",
-  components: {
-    HomeComponent,
-  },
+  components: {},
 };
 </script>
 
