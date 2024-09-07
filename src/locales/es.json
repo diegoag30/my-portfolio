@@ -1,13 +1,17 @@
 {
   "project1": {
-    "id": 1,
+    "id": 0,
     "title": "Portal de Administración de Club Deportivo Villa Elisa",
-    "description": {
-      "brief": "Un sistema dividido en dos portales: público y privado. El portal privado desarrollado en Flask permite a los administradores gestionar socios, pagos e inscripciones, mientras que el portal público desarrollado en Vue facilita a los usuarios visualizar disciplinas y su historial de pagos.",
-      "tags": [
-        { "content": "Python", "color": "teal-darken-3" },
-        { "content": "Vue", "color": "blue-lighten-2" }
-      ]
-    }
+    "brief": "Un sistema dividido en dos portales: público y privado. El portal privado desarrollado en Flask permite a los administradores gestionar socios, pagos e inscripciones, mientras que el portal público desarrollado en Vue facilita a los usuarios visualizar disciplinas y su historial de pagos."
+  },
+  "project2": {
+    "id": 1,
+    "title": "Generador de Exámenes Tipo Quiz",
+    "brief": "Aplicación en Vue.js que permite importar un archivo CSV con preguntas y alternativas para generar un examen tipo quiz. Las alternativas se ordenan aleatoriamente, y la aplicación realiza un seguimiento del progreso. Al finalizar, se muestra el puntaje total junto con las respuestas incorrectas y las correctas correspondientes."
+  },
+  "project3": {
+    "id": 2,
+    "title": "Seguimiento de Criptomonedas",
+    "brief": "Una aplicación desarrollada en Next.js que se conecta a la API de CoinMarketCap para obtener información actualizada sobre criptomonedas. Muestra una tabla con las últimas estadísticas de rendimiento y permite a los usuarios guardar sus criptomonedas favoritas para un seguimiento personalizado."
   }
 }

@@ -9,9 +9,13 @@
     </v-img>
 
     <v-card-title class="pt-4"> {{ title }} </v-card-title>
-    <v-chip class="ma-2" color="success"> Server Status </v-chip>
+    <v-row class="d-flex justify-center flex-wrap" align="center">
+      <div v-for="tag in tags" :key="tag.id">
+        <v-chip class="ma-2" :color="tag.color"> {{ tag.content }} </v-chip>
+      </div>
+    </v-row>
     <v-card-text>
-      <div>{{ brief }}</div>
+      <p class="text-justify">{{ brief }}</p>
     </v-card-text>
 
     <v-card-actions class="justify-center">
@@ -34,6 +38,7 @@ export default {
   props: {
     title: String,
     brief: String,
+    tags: Array,
     img_path: String,
   },
 };
