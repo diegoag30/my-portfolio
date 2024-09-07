@@ -2,7 +2,7 @@
   <v-container>
     <v-col>
       <ProyectItemComponent
-        title="titulo1"
+        :title="$t('project1.title')"
         brief="ajsjdhfb"
         img_path="images/cdve_1.png"
         class="pa-2 ma-2"

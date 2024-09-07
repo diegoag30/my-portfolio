@@ -1,0 +1,13 @@
+{
+  "project1": {
+    "id": 1,
+    "title": "Portal de Administración de Club Deportivo Villa Elisa",
+    "description": {
+      "brief": "Un sistema dividido en dos portales: público y privado. El portal privado desarrollado en Flask permite a los administradores gestionar socios, pagos e inscripciones, mientras que el portal público desarrollado en Vue facilita a los usuarios visualizar disciplinas y su historial de pagos.",
+      "tags": [
+        { "content": "Python", "color": "teal-darken-3" },
+        { "content": "Vue", "color": "blue-lighten-2" }
+      ]
+    }
+  }
+}
