@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="800">
+  <v-card class="mx-auto" max-width="800" variant="text" elevation="16">
     <v-img
       class="align-end text-white border-md border-dashed border-opacity rounded"
       height="400"
@@ -14,10 +14,16 @@
       <div>{{ brief }}</div>
     </v-card-text>
 
-    <v-card-actions>
-      <v-btn color="orange" text="Share"></v-btn>
-
-      <v-btn color="orange" text="Explore"></v-btn>
+    <v-card-actions class="justify-center">
+      <v-btn
+        color="primary"
+        density="comfortable"
+        size="x-large"
+        variant="flat"
+        class="text-none"
+        rounded="lg"
+        text="Explorar"
+      ></v-btn>
     </v-card-actions>
   </v-card>
 </template>
