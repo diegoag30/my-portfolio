@@ -2,7 +2,7 @@
   <v-card class="mx-auto" max-width="800" variant="text" elevation="16">
     <v-img
       class="align-end text-white border-md border-dashed border-opacity rounded"
-      height="400"
+      height="420"
       :src="img_path"
       cover
     >
@@ -20,10 +20,11 @@
 
     <v-card-actions class="justify-center">
       <v-btn
+        disabled
         color="primary"
         density="comfortable"
         size="x-large"
-        variant="flat"
+        variant="plain"
         class="text-none"
         rounded="lg"
         text="Explorar"

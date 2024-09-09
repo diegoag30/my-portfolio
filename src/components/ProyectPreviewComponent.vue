@@ -1,5 +1,16 @@
 <template>
   <v-container>
+    <v-btn
+      color="secondary"
+      @click="$router.go(-1)"
+      class="mb-4"
+      rounded
+      elevation="2"
+      density="comfortable"
+    >
+      <v-icon left>mdi-arrow-left</v-icon>
+      Volver
+    </v-btn>
     <v-col>
       <ProyectItemComponent
         :title="$t('project1.title')"
