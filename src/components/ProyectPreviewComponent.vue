@@ -39,10 +39,13 @@
       />
     </v-col>
   </v-container>
+  <FooterComponent />
 </template>
 
 <script setup>
+import FooterComponent from "./FooterComponent.vue";
 import ProyectItemComponent from "./ProyectItemComponent.vue";
+
 const proyect1Tags = [
   { id: 0, content: "Python", color: "green-darken-2" },
   { id: 1, content: "Vue", color: "green-accent-3" },
