@@ -13,16 +13,16 @@
     </v-btn>
     <v-col>
       <ProyectItemComponent
-        :title="$t('project1.title')"
-        :brief="$t('project1.brief')"
+        :title="$t('projects.project1.title')"
+        :brief="$t('projects.project1.brief')"
         :tags="proyect1Tags"
         img_path="images/cdve_1.png"
         class="pa-2 ma-2"
       />
 
       <ProyectItemComponent
-        :title="$t('project2.title')"
-        :brief="$t('project2.brief')"
+        :title="$t('projects.project2.title')"
+        :brief="$t('projects.project2.brief')"
         :tags="proyect2Tags"
         img_path="images/quiz_game_app_1.png"
         class="pa-2 ma-2"
@@ -31,8 +31,8 @@
       <v-responsive width="100%"></v-responsive>
 
       <ProyectItemComponent
-        :title="$t('project3.title')"
-        :brief="$t('project3.brief')"
+        :title="$t('projects.project3.title')"
+        :brief="$t('projects.project3.brief')"
         :tags="proyect3Tags"
         img_path="images/currency_tracker_app_1.png"
         class="pa-2 ma-2"

@@ -6,7 +6,7 @@
           <v-row align="center" justify="center">
             <v-icon class="mr-2">mdi-linkedin</v-icon>
             <a
-              href="https://www.linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/diegoag30"
               target="_blank"
               class="text-white"
             >
@@ -19,7 +19,7 @@
           <v-row align="center" justify="center">
             <v-icon class="mr-2">mdi-github</v-icon>
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/diegoag30"
               target="_blank"
               class="text-white"
             >
@@ -38,7 +38,10 @@
         <v-col class="text-center" cols="12" sm="3">
           <v-row align="center" justify="center">
             <v-icon class="mr-2">mdi-email</v-icon>
-            <a href="mailto:your-email@example.com" class="text-white no-wrap">
+            <a
+              href="mailto:diego.pablo.aguilar@gmail.com"
+              class="text-white no-wrap"
+            >
               diego.pablo.aguilar@gmail.com
             </a>
           </v-row>
