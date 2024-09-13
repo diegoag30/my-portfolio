@@ -11,30 +11,12 @@
       <v-icon left>mdi-arrow-left</v-icon>
       Volver
     </v-btn>
-    <v-col>
+    <v-col v-for="i in projects_index" :key="i">
       <ProyectItemComponent
-        :title="$t('projects.project1.title')"
-        :brief="$t('projects.project1.brief')"
-        :tags="proyect1Tags"
-        img_path="images/cdve_1.png"
-        class="pa-2 ma-2"
-      />
-
-      <ProyectItemComponent
-        :title="$t('projects.project2.title')"
-        :brief="$t('projects.project2.brief')"
-        :tags="proyect2Tags"
-        img_path="images/quiz_game_app_1.png"
-        class="pa-2 ma-2"
-      />
-
-      <v-responsive width="100%"></v-responsive>
-
-      <ProyectItemComponent
-        :title="$t('projects.project3.title')"
-        :brief="$t('projects.project3.brief')"
-        :tags="proyect3Tags"
-        img_path="images/currency_tracker_app_1.png"
+        :title="$t(`projects.${i}.title`)"
+        :brief="$t(`projects.${i}.brief`)"
+        :tags="getTagsForProject(i)"
+        :img_path="`images/project_${i}_image_0.png`"
         class="pa-2 ma-2"
       />
     </v-col>
@@ -43,25 +25,37 @@
 </template>
 
 <script setup>
+import { computed } from "vue";
 import FooterComponent from "./FooterComponent.vue";
 import ProyectItemComponent from "./ProyectItemComponent.vue";
 
-const proyect1Tags = [
-  { id: 0, content: "Python", color: "green-darken-2" },
-  { id: 1, content: "Vue", color: "green-accent-3" },
-  { id: 2, content: "Api", color: "light-blue-darken-1" },
-  { id: 3, content: "Flask", color: "green-darken-2" },
-];
-const proyect2Tags = [
-  { id: 0, content: "Vue", color: "green-accent-3" },
-  { id: 1, content: "JavaScript", color: "yellow-lighten-1" },
-];
-const proyect3Tags = [
-  { id: 0, content: "Next", color: "blue-grey-darken-2" },
-  { id: 1, content: "TypeScript", color: "light-blue-darken-4" },
-  { id: 2, content: "JavaScript", color: "yellow-lighten-1" },
-  { id: 3, content: "Api", color: "light-blue-darken-1" },
-];
+const projects_index = computed(() => {
+  return Array.from({ length: 3 }, (_, i) => i); // [0, 1, 2]
+});
+
+const tags = {
+  0: [
+    { content: "Python", color: "green-darken-2" },
+    { content: "Vue", color: "green-accent-3" },
+    { content: "Api", color: "light-blue-darken-1" },
+    { content: "Flask", color: "green-darken-2" },
+  ],
+  1: [
+    { content: "Vue", color: "green-accent-3" },
+    { content: "JavaScript", color: "yellow-lighten-1" },
+  ],
+  2: [
+    { content: "Next", color: "blue-grey-darken-2" },
+    { content: "TypeScript", color: "light-blue-darken-4" },
+    { content: "JavaScript", color: "yellow-lighten-1" },
+    { content: "Api", color: "light-blue-darken-1" },
+  ],
+};
+
+// Function to get tags based on projectId
+const getTagsForProject = (projectId) => {
+  return tags[projectId] || [];
+};
 </script>
 
 <style></style>
