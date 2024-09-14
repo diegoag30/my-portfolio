@@ -1,6 +1,7 @@
 // src/router/index.js
 import HomeComponent from "@/components/HomeComponent.vue";
-import ProyectPreviewComponent from "@/components/ProyectPreviewComponent.vue";
+import ProjectDetails from "@/components/ProjectDetails.vue";
+import ProjectPreviewComponent from "@/components/ProjectPreviewComponent.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
@@ -10,9 +11,15 @@ const routes = [
     component: HomeComponent,
   },
   {
-    path: "/proyects",
-    name: "Proyects",
-    component: ProyectPreviewComponent,
+    path: "/projects",
+    name: "Projects",
+    component: ProjectPreviewComponent,
+  },
+  {
+    path: "/projects/:id", // dynamic route with 'id'
+    name: "ProjectDetails",
+    component: ProjectDetails,
+    props: true, // this will pass the 'id' as a prop to the component
   },
 ];
 

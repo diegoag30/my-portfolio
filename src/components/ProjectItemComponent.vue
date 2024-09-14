@@ -20,11 +20,12 @@
 
     <v-card-actions class="justify-center">
       <v-btn
-        disabled
+        :to="`/projects/${project_id}`"
+        tag="router-link"
         color="primary"
         density="comfortable"
         size="x-large"
-        variant="plain"
+        variant="elevated"
         class="text-none"
         rounded="lg"
         text="Explorar"
@@ -41,6 +42,7 @@ export default {
     brief: String,
     tags: Array,
     img_path: String,
+    project_id: Number,
   },
 };
 </script>

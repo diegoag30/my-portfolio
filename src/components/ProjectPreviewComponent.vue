@@ -12,7 +12,8 @@
       Volver
     </v-btn>
     <v-col v-for="i in projects_index" :key="i">
-      <ProyectItemComponent
+      <ProjectItemComponent
+        :project_id="i"
         :title="$t(`projects.${i}.title`)"
         :brief="$t(`projects.${i}.brief`)"
         :tags="getTagsForProject(i)"
@@ -27,7 +28,7 @@
 <script setup>
 import { computed } from "vue";
 import FooterComponent from "./FooterComponent.vue";
-import ProyectItemComponent from "./ProyectItemComponent.vue";
+import ProjectItemComponent from "./ProjectItemComponent.vue";
 
 const projects_index = computed(() => {
   return Array.from({ length: 3 }, (_, i) => i); // [0, 1, 2]
@@ -57,5 +58,3 @@ const getTagsForProject = (projectId) => {
   return tags[projectId] || [];
 };
 </script>
-
-<style></style>
